@@ -4,9 +4,9 @@ module Types
     include GraphQL::Types::Relay::HasNodeField
     include GraphQL::Types::Relay::HasNodesField
 
-    field :list_users, [Types::UserType], null: false
+    field :users, [Types::UserType], null: false
 
-    def list_users
+    def users
       User.all
     end
 
