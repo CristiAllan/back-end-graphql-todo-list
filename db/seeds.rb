@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+u = User.create(name: 'Cristi', email: 'cristiallan@gmail.com')
+
+u.tasks.create(name: 'Teste', status: :todo)
+u.tasks.create(name: 'task 2', status: :todo)
